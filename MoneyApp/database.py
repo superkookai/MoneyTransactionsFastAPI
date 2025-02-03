@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
 # sqlite
-SQLALCHEMY_DATABASE_URL = "sqlite:///./transactions.db"
+SQLALCHEMY_DATABASE_URL = "sqlite:///./moneyapp.db"
 engine = create_engine(SQLALCHEMY_DATABASE_URL, connect_args={'check_same_thread': False})
 
 SessionLocal = sessionmaker(autocommit=False,autoflush=False,bind=engine)
